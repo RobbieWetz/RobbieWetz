@@ -1,0 +1,1 @@
+This is a map cenetered around Clove Lake's Park in Staten Island. This area holds a lot of meaning and memories for me so I wanted to create a map that showcases it and the various locations surrounding it such as the restaurant withing the park called The Stone House.
