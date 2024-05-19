@@ -37,7 +37,7 @@ fetch('https://RobbieWetz.github.io/RobbieWetz/Robert_daytimeroute.geojson')
     });
         
 
-   // Load the GeoJSON line file.
+// Load the GeoJSON line file.
 fetch('https://RobbieWetz.github.io/RobbieWetz/Robert_eveningroute.geojson')
     .then(response => response.json())
     .then(geojson => {
