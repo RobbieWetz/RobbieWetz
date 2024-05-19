@@ -37,4 +37,22 @@ fetch('https://RobbieWetz.github.io/RobbieWetz/Robert_daytimeroute.geojson')
     });
         
 
-        
+   // Load the GeoJSON line file.
+fetch('https://RobbieWetz.github.io/RobbieWetz/Robert_eveningroute.geojson')
+    .then(response => response.json())
+    .then(geojson => {
+        // Customize the style of the line
+        var lineStyle = {
+            color: 'blue', // Change the coor as needed
+            weight: 5, // Change weight as needed
+            opacity: 0.7 // Change opacity as needed
+        };
+
+        // Add the GeoJson line to the map
+        L.geoJSON(geojson, {
+            style: lineStyle
+        }).addTo(map);
+    })
+    .catch(error => {
+            console.error('Error loading GeoJson file:', error);
+    });     
