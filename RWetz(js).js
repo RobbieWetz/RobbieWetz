@@ -11,3 +11,30 @@ var marker = L.marker([40.61833798043794, -74.10818864897371]).addTo(map);
 
 // Add a popup to the marker
 marker.bindPopup("<b>The Stone House</b><br>This is a Leaflet map.").openPopup();
+
+
+
+
+
+// Load the GeoJSON line file.
+fetch('')
+    .then(response => response.json())
+    .then(geojson => {
+        // Customize the style of the line
+        var lineStyle = {
+            color: 'red', // Change the coor as needed
+            weight: 5, // Change weight as needed
+            opacity: 0.7 // Change opacity as needed
+        };
+
+        // Add the GeoJson line to the map
+        L.geoJSON(geojson, {
+            style: lineStyle
+        }).addTo(map);
+    })
+    .catch(error => {
+            console.error('Error loading GeoJson file:', error);
+    });
+        
+
+        
