@@ -17,7 +17,7 @@ marker.bindPopup("<b>The Stone House</b><br>This is a Leaflet map.").openPopup()
 
 
 // Load the GeoJSON line file.
-fetch('')
+fetch('https://RobbieWetz.github.io/RobbieWetz/Robert_daytimeroute.geojson')
     .then(response => response.json())
     .then(geojson => {
         // Customize the style of the line
