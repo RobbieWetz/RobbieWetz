@@ -30,7 +30,29 @@ var marker = L.marker([40.6099219488223, -74.14950154241677]).addTo(map);
 // Add a popup to the marker
 marker.bindPopup("<b>Gaeta Park</b>").openPopup();
 
+// Add a marker to the map for New York City
+var marker = L.marker([40.61076493943147, -74.14633921798476]).addTo(map);
 
+// Add a popup to the marker
+marker.bindPopup("<b>Bagels N' Buns</b><br>This shop sells really good bagels and sandwhiches!.").openPopup();
+
+// Add a marker to the map for New York City
+var marker = L.marker([40.6104208213839, -74.14372138197243]).addTo(map);
+
+// Add a popup to the marker
+marker.bindPopup("<b>Wiesner Brothers Nursery Inc</b><br>Offers really good tree planting services and lots of exterior decor!.").openPopup();
+
+// Add a marker to the map for New York City
+var marker = L.marker([40.61443610078239, -74.11327831035833]).addTo(map);
+
+// Add a popup to the marker
+marker.bindPopup("<b>Royal Oak Little League Field</b>").openPopup();
+
+// Add a marker to the map for New York City
+var marker = L.marker([40.61573918212216, -74.10778514626172]).addTo(map);
+
+// Add a popup to the marker
+marker.bindPopup("<b>WWII Veterans Memorial Ice Skating Rink</b><br>Very nice ice skatinf rink, open during the winter season!.").openPopup();
 
 
 
