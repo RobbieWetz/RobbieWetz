@@ -10,7 +10,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 var marker = L.marker([40.61833798043794, -74.10818864897371]).addTo(map);
 
 // Add a popup to the marker
-marker.bindPopup("<b>The Stone House</b><br>This is a Leaflet map.").openPopup();
+marker.bindPopup("<b>The Stone House</b><br>Scenic and high quality restaurant within Clove Lakes Park.").openPopup();
 
 // Add a marker to the map for New York City
 var marker = L.marker([40.61797668668023, -74.1056101967246]).addTo(map);
@@ -52,7 +52,7 @@ marker.bindPopup("<b>Royal Oak Little League Field</b>").openPopup();
 var marker = L.marker([40.61573918212216, -74.10778514626172]).addTo(map);
 
 // Add a popup to the marker
-marker.bindPopup("<b>WWII Veterans Memorial Ice Skating Rink</b><br>Very nice ice skatinf rink, open during the winter season!.").openPopup();
+marker.bindPopup("<b>WWII Veterans Memorial Ice Skating Rink</b><br>Very nice ice skating rink, open during the winter season!.").openPopup();
 
 
 
