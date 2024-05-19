@@ -12,6 +12,24 @@ var marker = L.marker([40.61833798043794, -74.10818864897371]).addTo(map);
 // Add a popup to the marker
 marker.bindPopup("<b>The Stone House</b><br>This is a Leaflet map.").openPopup();
 
+// Add a marker to the map for New York City
+var marker = L.marker([40.61797668668023, -74.1056101967246]).addTo(map);
+
+// Add a popup to the marker
+marker.bindPopup("<b>Stonehenge: Staten Island Department of Parks & Recreation</b><br>The main office of Clove Lakes Park.").openPopup();
+
+// Add a marker to the map for New York City
+var marker = L.marker([40.60958800757106, -74.14854131157864]).addTo(map);
+
+// Add a popup to the marker
+marker.bindPopup("<b>Todt Hill-Westerleigh Library</b><br>This library has been around since 1991!.").openPopup();
+
+// Add a marker to the map for New York City
+var marker = L.marker([40.6099219488223, -74.14950154241677]).addTo(map);
+
+// Add a popup to the marker
+marker.bindPopup("<b>Gaeta Park</b>").openPopup();
+
 
 
 
