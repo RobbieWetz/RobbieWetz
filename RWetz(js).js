@@ -139,3 +139,38 @@ fetch('https://RobbieWetz.github.io/RobbieWetz/robertroutefootprints.geojson')
 .catch(error => {
     console.error('Error loading GeoJSON file:', error);
 });
+
+
+var categoryColors = {
+    "1": "red",
+    "2": "orange",
+    "3": "yellow",
+    "4": "green",
+    "X": "gray" // Default color for other categories
+};
+
+
+// Function to set style based on category
+function getFeatureStyle(feature) {
+    var category = feature.properties.hurricane_; // Adjust property name
+    var color = categoryColors[category] || "gray"; // Default color if category not found
+    var fillOpacity = category === "X" ? 0 : 0.6; // Set fill opacity to 0 for "X" category
+    return {
+        fillColor: color,
+        fillOpacity: fillOpacity,
+    };
+}
+
+
+// Load the GeoJSON polygon file
+fetch('https://aurashktest.github.io/aurashktest/hev.geojson')
+.then(response => response.json())
+.then(geojson => {
+    // Add the GeoJSON polygons to the map with customized style
+    L.geoJSON(geojson, {
+        style: getFeatureStyle
+    }).addTo(map);
+})
+.catch(error => {
+    console.error('Error loading GeoJSON file:', error);
+});
