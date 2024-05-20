@@ -119,3 +119,23 @@ fetch('https://RobbieWetz.github.io/RobbieWetz/Robert_eveningroute.geojson')
     .catch(error => {
             console.error('Error loading GeoJson file:', error);
     });     
+
+
+// Load the GeoJSON polygon file
+fetch('https://RobbieWetz.github.io/RobbieWetz/robertroutefootprints.geojson')
+.then(response => response.json())
+.then(geojson => {
+    // Customize the style of the polygon
+    var polygonStyle = {
+        fillColor: 'pink', // Fill color
+        fillOpacity: 0.5, // Fill opacity
+    };
+
+    // Add the GeoJSON polygon to the map
+    L.geoJSON(geojson, {
+        style: polygonStyle
+    }).addTo(map);
+})
+.catch(error => {
+    console.error('Error loading GeoJSON file:', error);
+});
