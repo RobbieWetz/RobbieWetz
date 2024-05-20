@@ -12,7 +12,7 @@ var stonehousemarker = L.marker([40.61833798043794, -74.10818864897371]).addTo(m
 // Add a popup to the marker
 stonehousemarker.bindPopup(`
     <b>The Stone House</b><br>Scenic and high quality restaurant within Clove Lakes Park.<br>
-    <img src="https://RobbieWetz.github.io/RobbieWetz/Images/StoneHouse.jpg" alt="The Stone House" style="width: 200px; height: auto;">
+    <img src="https://RobbieWetz.github.io/RobbieWetz/Images/StoneHouse.jpg" alt="The Stone House" style="width: 130px; height: auto;">
     `).openPopup();
 
 // Add a marker to the map for New York City
@@ -21,45 +21,62 @@ var stonehengemarker = L.marker([40.61797668668023, -74.1056101967246]).addTo(ma
 // Add a popup to the marker
 stonehengemarker.bindPopup(`
     <b>Stonehenge: Staten Island Department of Parks & Recreation</b><br>The main office of Clove Lakes Park.<br>
-    <img src="https://RobbieWetz.github.io/RobbieWetz/Images/Stonehenge.jpg" alt="Stonehenge" style="width: 200px; height: auto;">
+    <img src="https://RobbieWetz.github.io/RobbieWetz/Images/Stonehenge.jpg" alt="Stonehenge" style="width: 130px; height: auto;">
     `).openPopup();
 
 // Add a marker to the map for New York City
-var marker = L.marker([40.60958800757106, -74.14854131157864]).addTo(map);
+var librarymarker = L.marker([40.60958800757106, -74.14854131157864]).addTo(map);
 
 // Add a popup to the marker
-marker.bindPopup("<b>Todt Hill-Westerleigh Library</b><br>This library has been around since 1991!.").openPopup();
+librarymarker.bindPopup(`
+    <b>Todt Hill-Westerleigh Library</b><br>This library has been around since 1991!<br>
+    <img src="https://RobbieWetz.github.io/RobbieWetz/Images/Library.jpg" alt="Todt Hill-Westerleigh Library" style="width: 130px; height: auto;">
+    `).openPopup();
 
 // Add a marker to the map for New York City
-var marker = L.marker([40.6099219488223, -74.14950154241677]).addTo(map);
+var gaetamarker = L.marker([40.6099219488223, -74.14950154241677]).addTo(map);
 
 // Add a popup to the marker
-marker.bindPopup("<b>Gaeta Park</b>").openPopup();
+gaetamarker.bindPopup(`
+    <b>Gaeta Park</b><br>A small park sometimes used for community events!<br>
+    <img src="https://RobbieWetz.github.io/RobbieWetz/Images/Gaeta.jpg" alt="Gaeta Park" style="width: 130px; height: auto;">
+    `).openPopup();
 
 // Add a marker to the map for New York City
-var marker = L.marker([40.61076493943147, -74.14633921798476]).addTo(map);
+var bagelsmarker = L.marker([40.61076493943147, -74.14633921798476]).addTo(map);
 
 // Add a popup to the marker
-marker.bindPopup("<b>Bagels N' Buns</b><br>This shop sells really good bagels and sandwhiches!.").openPopup();
+bagelsmarker.bindPopup(`
+    <b>Bagels N' Buns</b><br>This shop sells really good bagels and sandwiches!<br>
+    <img src="https://RobbieWetz.github.io/RobbieWetz/Images/BagelsNBuns.jpg" alt="Bagels N' Buns" style="width: 130px; height: auto;">
+    `).openPopup();
 
 // Add a marker to the map for New York City
-var marker = L.marker([40.6104208213839, -74.14372138197243]).addTo(map);
+var wiesnermarker = L.marker([40.6104208213839, -74.14372138197243]).addTo(map);
 
 // Add a popup to the marker
-marker.bindPopup("<b>Wiesner Brothers Nursery Inc</b><br>Offers really good tree planting services and lots of exterior decor!.").openPopup();
+wiesnermarker.bindPopup(`
+    <b>Wiesner Brothers Nursery Inc</b><br>Offers really good tree planting services and lots of exterior decor!<br>
+    <img src="https://RobbieWetz.github.io/RobbieWetz/Images/Wiesner.jpg" alt="Wiesner Brothers Nursery Inc" style="width: 130px; height: auto;">
+    `).openPopup();
 
 // Add a marker to the map for New York City
-var marker = L.marker([40.61443610078239, -74.11327831035833]).addTo(map);
+var baseballmarker = L.marker([40.61443610078239, -74.11327831035833]).addTo(map);
 
 // Add a popup to the marker
-marker.bindPopup("<b>Royal Oak Little League Field</b>").openPopup();
+baseballmarker.bindPopup(`
+    <b>Royal Oak Little League Field</b><br>A field used for baseball practice.<br>
+    <img src="https://RobbieWetz.github.io/RobbieWetz/Images/BaseballField.jpg" alt="Royal Oak Little League Field" style="width: 130px; height: auto;">
+    `).openPopup();
 
 // Add a marker to the map for New York City
-var marker = L.marker([40.61573918212216, -74.10778514626172]).addTo(map);
+var skatingmarker = L.marker([40.61573918212216, -74.10778514626172]).addTo(map);
 
 // Add a popup to the marker
-marker.bindPopup("<b>WWII Veterans Memorial Ice Skating Rink</b><br>Very nice ice skating rink, open during the winter season!.").openPopup();
-
+skatingmarker.bindPopup(`
+    <b>WWII Veterans Memorial Ice Skating Rink</b><br>Very nice ice skating rink, open during the winter season!<br>
+    <img src="https://RobbieWetz.github.io/RobbieWetz/Images/IceSkating.jpg" alt="WWII Veterans Memorial Ice Skating Rink" style="width: 130px; height: auto;">
+    `).openPopup();
 
 
 // Load the GeoJSON line file.
