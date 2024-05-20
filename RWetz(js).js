@@ -127,7 +127,7 @@ fetch('https://RobbieWetz.github.io/RobbieWetz/robertroutefootprints.geojson')
 .then(geojson => {
     // Customize the style of the polygon
     var polygonStyle = {
-        fillColor: 'pink', // Fill color
+        fillColor: 'blue', // Fill color
         fillOpacity: 0.5, // Fill opacity
     };
 
