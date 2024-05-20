@@ -7,10 +7,12 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 // Add a marker to the map for New York City
-var marker = L.marker([40.61833798043794, -74.10818864897371]).addTo(map);
+var stonehousemarker = L.marker([40.61833798043794, -74.10818864897371]).addTo(map);
 
 // Add a popup to the marker
-marker.bindPopup("<b>The Stone House</b><br>Scenic and high quality restaurant within Clove Lakes Park.").openPopup();
+stonehousemarker.bindPopup(`
+    <b>The Stone House</b><br>Scenic and high quality restaurant within Clove Lakes Park.<br>
+    img src="https://RobbieWetz.github.io/RobbieWetz/Images/").openPopup();
 
 // Add a marker to the map for New York City
 var marker = L.marker([40.61797668668023, -74.1056101967246]).addTo(map);
