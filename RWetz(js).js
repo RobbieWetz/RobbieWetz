@@ -12,7 +12,7 @@ var stonehousemarker = L.marker([40.61833798043794, -74.10818864897371]).addTo(m
 // Add a popup to the marker
 stonehousemarker.bindPopup(`
     <b>The Stone House</b><br>Scenic and high quality restaurant within Clove Lakes Park.<br>
-    <img src="https://RobbieWetz.github.io/RobbieWetz/Images/StoneHouse.jpg" alt="The Stone House" style="width: 300px; height: auto;">
+    <img src="https://RobbieWetz.github.io/RobbieWetz/Images/StoneHouse.jpg" alt="The Stone House" style="width: 200px; height: auto;">
     `).openPopup();
 
 // Add a marker to the map for New York City
@@ -21,7 +21,7 @@ var stonehengemarker = L.marker([40.61797668668023, -74.1056101967246]).addTo(ma
 // Add a popup to the marker
 stonehengemarker.bindPopup(`
     <b>Stonehenge: Staten Island Department of Parks & Recreation</b><br>The main office of Clove Lakes Park.<br>
-    <img src="https://RobbieWetz.github.io/RobbieWetz/Images/Stonehenge.jpg" alt="Stonehenge" style="width: 300px; height: auto;">
+    <img src="https://RobbieWetz.github.io/RobbieWetz/Images/Stonehenge.jpg" alt="Stonehenge" style="width: 200px; height: auto;">
     `).openPopup();
 
 // Add a marker to the map for New York City
