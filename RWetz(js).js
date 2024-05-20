@@ -163,7 +163,7 @@ function getFeatureStyle(feature) {
 
 
 // Load the GeoJSON polygon file
-fetch('https://aurashktest.github.io/aurashktest/hev.geojson')
+fetch('https://RobbieWetz.github.io/RobbieWetz/hev.geojson')
 .then(response => response.json())
 .then(geojson => {
     // Add the GeoJSON polygons to the map with customized style
